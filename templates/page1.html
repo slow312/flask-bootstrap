@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- the important part here is naming the correct .css file you want to load! -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}"> 
+        <!-- important to note, that the location of filename by default, is going to look for things in a 'static' folder -->
+    </head>
+    <body>
+        <h1> Page 1</h1>
+        <p>Button 1 Below</p>
+        <button type="button" class="btn btn-danger">Home</button>
+        <p> Component 1</p>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+    </body>
+</html>
